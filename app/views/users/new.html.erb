@@ -1,0 +1,31 @@
+<h1>Create Account</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+
+      <%= f.label :username %>
+      <%= f.text_field :username %><br>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %><br>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %><br>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %><br>
+
+      <%= f.label :street_address, "Street Address" %>
+      <%= f.text_field :street_address %><br>
+
+      <%= f.label :city, "City" %>
+      <%= f.text_field :city %><br>
+
+      <%= f.label :state, "State" %>
+      <%= f.text_field :state %><br>
+
+      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
