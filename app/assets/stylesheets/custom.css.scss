@@ -4,9 +4,11 @@
 	
 		background-image:url('bankvault.jpg');
 		background-repeat:no-repeat;
-		background-size: 100%;
-
+		background-size:cover;
+		background-position:center;
+		background-color:#ccc;
 	}
+	
 	.outer-container{
 		text-align: center;
 	}
@@ -141,3 +143,29 @@
 		color: #D41313; 
 		font-size: 1.00em;
 	}
+	
+@media only screen and (min-width:960px){
+	#sesison{
+		width:100%;
+	}
+}
+@media only screen and (max-width:960px) and (min-width:720px){
+
+	#session{
+		width:720px;
+	}
+	
+}
+@media only screen and (max-width:720px){
+	#session{
+		width:100%;
+	}
+}
+@media only screen and (max-width:480px){
+	#session{
+		
+	}
+	h1{
+	 font-size:48px;
+	}
+}
