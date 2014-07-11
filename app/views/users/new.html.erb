@@ -16,14 +16,14 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %><br>
 
-      <%= f.label :street_address, "Street Address" %>
-      <%= f.text_field :street_address %><br>
+      <%= f.label :admin2, "Make Admin" %>
+      <%= f.check_box :admin2 %>
 
-      <%= f.label :city, "City" %>
-      <%= f.text_field :city %><br>
-
-      <%= f.label :state, "State" %>
-      <%= f.text_field :state %><br>
+      <% if @user.errors.full_messages.any? %>
+      <% @user.errors.full_messages.each do |error_message| %>
+      <%= @user.errors.full_messages.first if @user.errors.any? %>
+      <%end%>
+      <%end%>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
     <% end %>
