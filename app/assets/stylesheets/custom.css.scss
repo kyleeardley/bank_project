@@ -1,0 +1,134 @@
+@import "bootstrap";
+
+	#session{
+		background-image:url('bankvault.jpg');
+	}
+	.outer-container{
+		text-align: center;
+	}
+	
+	h1{
+		text-align: center;
+	    text-shadow: 0 1px 0 #ccc,
+				     0 2px 0 #c9c9c9,
+				     0 3px 0 #bbb,
+				     0 4px 0 #b9b9b9,
+				     0 5px 0 #aaa,
+				     0 6px 1px rgba(0,0,0,.1),
+				     0 0 5px rgba(0,0,0,.1),
+				     0 1px 3px rgba(0,0,0,.3),
+				     0 3px 5px rgba(0,0,0,.2),
+				     0 5px 10px rgba(0,0,0,.25),
+				     0 10px 10px rgba(0,0,0,.2),
+				     0 20px 20px rgba(0,0,0,.15);
+		text-transform: uppercase;
+		margin-top: 50px;
+	}
+	
+	.container {
+		box-shadow: 10px 10px 5px #888888;
+		box-sizing: border-box;
+		display: inline-block;
+		width: auto;
+		max-width: 480px;
+		background-color: #FFFFFF; 
+		border: 2px solid #333; 
+		border-radius: 5px; 
+		margin: 20px auto auto;
+		padding: 0px;
+		text-align: left;
+	}
+
+	.header {
+		background: #428bca;
+		padding: 15px;
+		text-align: center;
+	}
+	
+	.head{
+		font-family: verdana,arial;
+		color: #000; 
+		font-size: 1.00em; 
+		font-weight:bold;
+	}
+	
+	.padding {
+		background: #efefef;
+		padding-right: 35px;
+		padding-left: 20px;
+		padding-top:10px;
+		padding-bottom: 15px;
+	}
+	.pad{
+		background: #efefef;
+		padding-left:20px;
+		padding-right:35px;
+		padding-bottom:50px;
+		padding-top:10px;
+	}
+	
+	.text {
+		font-family: verdana,arial;
+		color: #000; 
+		font-size: 1.00em; 
+		font-weight:bold;
+	}
+	
+	td { 
+	 	text-align:left;
+	 	font-family: verdana,arial;
+	 	color: #000; 
+	 	font-size: 1.00em; 
+	}
+	
+	td, th {
+		padding-bottom: 5px;
+	}
+	 
+	input { 
+		border: 1px solid #CCCCCC; 
+		border-radius: 5px; 
+		color: #000;
+		display: inline-block; 
+		font-size: 1.00em;  
+		padding: 5px; 
+		width: 100%; 
+	}
+	
+	.submit{
+		color: #000;
+	}
+	
+	input[type="button"], input[type="reset"], input[type="submit"] { 
+		height: auto; 
+		width: auto; 
+		cursor: pointer; 
+		box-shadow: 0px 0px 5px #0361A8; 
+		float: right; 
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+	
+	input:hover{
+		opacity: .4;
+		color: #000;
+	}
+	.btn-large {
+		padding: 11px 19px;
+	}
+	a:hover{
+		color:#333;
+		opacity: .4;
+		text-decoration: none;
+	}
+	
+	table.center { 
+		margin-left:auto; 
+		margin-right:auto; 
+	}
+	
+	.error { 
+		font-family: verdana,arial;
+		color: #D41313; 
+		font-size: 1.00em;
+	}
