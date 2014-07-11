@@ -5,6 +5,7 @@ BankApp::Application.routes.draw do
   resources :users
   match '/terminal', to: 'bank#bank_central', via: 'get'
   match '/signup', to: 'users#new', via:'get'
+  match '/clienthome', to: 'bank#clienthome', via: 'get'
   #match '/new', to: 'users#new', via:'get'
   #match '/show', to: 'users#show', via: 'get'
   #match '/create', to: 'users#create', via: 'post'

@@ -7,10 +7,12 @@ class SessionsController < ApplicationController
   	user=User.find_by(username: params[:session][:username])
   	if user && user.authenticate(params[:session][:password])
   		sign_in user
-      redirect_to terminal_path if user.admin2?
       
-      #redirect_back_or user
-      
+      if user.admin2? 
+        redirect_to terminal_path
+      else
+        redirect_to clienthome_path
+      end
   		
   	else
       flash.now[:error] = 'Invalid email/password combination'
