@@ -1,7 +1,7 @@
 @import 'bootstrap';
 #terminalbody{
 	background-image: url("chrome.jpg");
-	margin-bottom: -2800px;
+	margin-top:-8%;
 }
 
 #maindisplaytitle {
@@ -10,6 +10,18 @@
 	opacity:1;
 	
 }
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+
 
 #displaytitlebox {
 	background: white;
@@ -26,17 +38,19 @@
 	opacity: .75;
 	margin-top: 8px;
 	border-radius: 4px;
-	margin-bottom: -65%;
+	
 }
 
 	#openexistingloan {
 	width: 200px;
 	height: 200px;
 	background-color: clear;
+	display: block;
 	position: relative;
 	left: -250px;
-	top: 220px;
-	color: white;
+	top: 50px;
+	color:white;
+
 	}
 	
 		#openexistingloan img {
@@ -56,7 +70,7 @@
 	display: block;
 	position: relative;
 	left: 250px;
-	top: 30px;
+	top: -155px;
 	color: white;
 
 	}
@@ -78,7 +92,7 @@
 	display: block;
 	position: relative;
 	left: 5px;
-	top: -215px;
+	top: -375px;
 	color: white;
 
 	}
@@ -88,11 +102,8 @@
 		height:200px;
 		margin-bottom: 0px;
 		padding-top: 0px;
-
-
 		} 
-
-
+		
 	#graphs {
 	width: 200px;
 	height: 200px;
@@ -100,7 +111,7 @@
 	display: block;
 	position: relative;
 	left: -250px;
-	top: -255px;
+	top: -410px;
 	color:white;
 
 	}
@@ -122,14 +133,14 @@
 	display: block;
 	position: relative;
 	left: 250px;
-	top: 150px;
+	top: -15px;
 	color:white;
 
 	}
 
 		#createloan img {
-		width:180px;
-		height:180px;
+		width:200px;
+		height:200px;
 		margin-bottom: -10px;
 		padding-top: 0px;
 
