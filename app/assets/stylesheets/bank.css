@@ -52,7 +52,7 @@ h2{
 	display: block;
 	position: relative;
 	left: -250px;
-	top: 50px;
+	top: 20px;
 	color:white;
 
 	}
@@ -61,7 +61,6 @@ h2{
 		
 		width: 200px;
 		height: 200px;
-		opacity: 1;
 		margin-bottom: -20px;
 
 		}
@@ -74,7 +73,7 @@ h2{
 	display: block;
 	position: relative;
 	left: 250px;
-	top: -155px;
+	top: -180px;
 	color: white;
 
 	}
@@ -95,8 +94,7 @@ h2{
 	background-color: clear;
 	display: block;
 	position: relative;
-	left: 5px;
-	top: -375px;
+	top: -380px;
 	color: white;
 
 	}
