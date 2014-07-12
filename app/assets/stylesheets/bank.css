@@ -1,49 +1,49 @@
 @import 'bootstrap';
-#terminalbody{
+	#terminalbody{
 	background-image: url("chrome.jpg");
 	margin-top:-11.5%;
-}
+	}
 
-#maindisplaytitle {
+	#maindisplaytitle {
 	color:#fff;
 	margin-top: 150px;
 	opacity:1;
-}
+	}
 
-h2{
+	h2{
 	padding-top:5px;
-}
-.bw {
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
+	}
+	
+	.bw {
+  	  -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
-}
+	}
  
-.bw:hover {
-  cursor: pointer;
-  -webkit-filter: grayscale(100%);
-}
+	.bw:hover {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    }
 
 
-#displaytitlebox {
+	#displaytitlebox {
 	background: #000;
 	width: 90%;
 	height: 50px;
 	opacity: .9;
 	border-radius: 10px;
-}
+	}
 
-.maindisplay{
+	.maindisplay{
 	width: 90%;
 	height: 618px;
 	background-color: #000;
 	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
-	
-}
+	}
 
 	#openexistingloan {
 	width: 200px;
@@ -54,15 +54,12 @@ h2{
 	left: -250px;
 	top: 20px;
 	color:white;
-
 	}
 	
 		#openexistingloan img {
-		
 		width: 200px;
 		height: 200px;
 		margin-bottom: -20px;
-
 		}
 	
 
@@ -73,9 +70,8 @@ h2{
 	display: block;
 	position: relative;
 	left: 250px;
-	top: -180px;
+	top: -188px;
 	color: white;
-
 	}
 
 		#loanrules img {
@@ -83,8 +79,6 @@ h2{
 		height:200px;
 		margin-bottom: -10px;
 		padding-top: 0px;
-
-
 		}
 
 
@@ -96,7 +90,6 @@ h2{
 	position: relative;
 	top: -380px;
 	color: white;
-
 	}
 
 		#clientlist img {
@@ -113,9 +106,8 @@ h2{
 	display: block;
 	position: relative;
 	left: -250px;
-	top: -410px;
+	top: -405px;
 	color:white;
-
 	}
 
 		#graphs img {
@@ -123,8 +115,6 @@ h2{
 		height:200px;
 		margin-bottom: -20px;
 		padding-top: 0px;
-
-
 		} 
 
 
@@ -137,7 +127,6 @@ h2{
 	left: 250px;
 	top: -15px;
 	color:white;
-
 	}
 
 		#createloan img {
@@ -145,8 +134,211 @@ h2{
 		height:200px;
 		margin-bottom: -10px;
 		padding-top: 0px;
+		}
+		
+@media only screen 
+and (min-device-width : 768px) {
+	#terminalbody{
+	margin-top:-150px;
+	}
+}
 
+@media only screen and (max-width:960px) and (min-width:720px){
+	#terminalbody{
+	margin-top:-150px;
+	}
+}
 
+@media only screen and (max-width:720px){
+	#terminalbody{
+	margin-top:-150px;
+	}
+		
+	#openexistingloan {
+	width: 150px;
+	height: 150px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: -160px;
+	top: 20px;
+	color:white;
+	}
+	
+		#openexistingloan img {
+		width: 150px;
+		height: 150px;
+		margin-bottom: -20px;
+		}
+	
+
+	#loanrules {
+	width: 150px;
+	height: 150px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: 175px;
+	top: -140px;
+	color: white;
+	}
+
+		#loanrules img {
+		width:150px;
+		height:150px;
+		margin-bottom: -10px;
+		padding-top: 0px;
 		}
 
+
+	#clientlist {
+	width: 150px;
+	height: 150px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	top: -220px;
+	color: white;
+	}
+
+		#clientlist img {
+		width:150px;
+		height:150px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		} 
+		
+	#graphs {
+	width: 150px;
+	height: 150px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: -170px;
+	top: -200px;
+	color:white;
+	}
+
+		#graphs img {
+		width:150px;
+		height:150px;
+		margin-bottom: -20px;
+		padding-top: 0px;
+		} 
+
+
+	#createloan {
+	width:150px;
+	height: 150px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: 175px;
+	top: 92px;
+	color:white;
+	}
+
+		#createloan img {
+		width:150px;
+		height:150px;
+		margin-bottom: -10px;
+		padding-top: 0px;
+		}
+}
+
+@media only screen and (max-width:480px){
+	#terminalbody{
+	margin-top:-150px;
+	}
+	
+	#openexistingloan {
+	width: 100px;
+	height: 100px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: -80px;
+	top: 20px;
+	color:white;
+	}
+	
+		#openexistingloan img {	
+		width: 150px;
+		height: 150px;
+		margin-bottom: -20px;	
+		}
+
+	#loanrules {
+	width: 100px;
+	height: 100px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: 100px;
+	top: -92px;
+	color: white;
+
+	}
+
+		#loanrules img {
+		width:150px;
+		height:150px;
+		margin-bottom: -10px;
+		padding-top: 0px;
+		}
+
+	#clientlist {
+	width: 100px;
+	height: 100px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	top: -80px;
+	color: white;
+	}
+
+		#clientlist img {
+		width:150px;
+		height:150px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		} 
+		
+	#graphs {
+	width: 100px;
+	height: 100px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: -80px;
+	top: 10px;
+	color:white;
+	}
+
+		#graphs img {
+		width:150px;
+		height:150px;
+		margin-bottom: -20px;
+		padding-top: 0px;
+		} 
+
+
+	#createloan {
+	width:100px;
+	height: 100px;
+	background-color: clear;
+	display: block;
+	position: relative;
+	left: 100px;
+	top: 200px;
+	color:white;
+	}
+
+		#createloan img {
+		width:150px;
+		height:150px;
+		margin-bottom: -10px;
+		padding-top: 0px;
+		}
+}
 
