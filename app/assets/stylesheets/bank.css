@@ -5,10 +5,13 @@
 }
 
 #maindisplaytitle {
-	color: black;
+	color:#fff;
 	margin-top: 150px;
 	opacity:1;
-	
+}
+
+h2{
+	padding-top:5px;
 }
 .bw {
   -webkit-transition: all 1s ease;
@@ -25,10 +28,10 @@
 
 
 #displaytitlebox {
-	background: white;
+	background: #000;
 	width: 90%;
 	height: 50px;
-	opacity: .95;
+	opacity: .9;
 	border-radius: 10px;
 }
 
@@ -36,7 +39,7 @@
 	width: 90%;
 	height: 618px;
 	background-color: #000;
-	opacity: .75;
+	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
 	
