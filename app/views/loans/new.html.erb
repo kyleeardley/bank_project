@@ -1,14 +1,14 @@
 <body id='newloanbody'>
-<div class="newloanouter-container">
+	<div class="newloanouter-container">
   <div class="newloancontain">
   <div class="newloanheader">
-  <span class="newloanhead">Create New Loan File</span>
+	<span class="text">Loan Application</span>
   </div>
   <div class="newloanpad">
-
-<%= render 'error_messages'%>
-<%= form_for @loan, :html => {:multipart => true} do |f| %>
+			<%= render 'error_messages'%>
+			<%= form_for @loan, :html => {:multipart => true} do |f| %>
   
+<<<<<<< HEAD
   <%= f.hidden_field :user_id %>
   <span class='newloanspan'>
     <%= f.label :name_of_borrower, 'Name of Borrower' %>
@@ -64,12 +64,63 @@
     <%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
     <%= f.file_field :title_insurance_docs %>
   </span>
+=======
+			<%= f.hidden_field :user_id %>
+		  <span class="newloanspan">
+			<%= f.label :name_of_borrower, 'Name of Borrower' %>
+			<%= f.text_field :name_of_borrower %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :name_of_banker, 'Name of Banker' %>
+			<%= f.text_field :name_of_banker %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :origination_date, 'Date of Loan Origination' %>
+			<%= f.text_field :origination_date %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :closed_date, 'Date of Loan Payoff' %>
+			<%= f.text_field :closed_date %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :loan_amount, 'Amount of Loan' %>
+			<%= f.text_field :loan_amount %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :loan_interest_rate, 'Input Loan Interest Rate' %>
+			<%= f.text_field :loan_interest_rate %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :loan_term, 'Length of Loan in Months' %>
+			<%= f.text_field :loan_term %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :loan_type, 'Select Loan Type' %>
+			<%= f.text_field :loan_type %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :loan_status, 'Select Loan Status' %>
+			<%= f.text_field :loan_status %>
+		  </span>
+		  <span class="newloanspan">
+			<%= f.label :application_docs, 'Loan Application Documents'%>
+			<%= f.file_field :application_docs %>
+		 </span>
+		 <span class="newloanspan">
+			<%= f.label :financials_docs, 'Client Financial Documents'%>
+			<%= f.file_field :financials_docs %>
+>>>>>>> c18169b245dafeed004e5942f7276b7a3f606857
 
+			<%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
+			<%= f.file_field :mortgage_agreement_docs %>
   
-  <p><%= f.submit %></p>
-<% end %>
-</div>
-  </div>
+			<%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
+			<%= f.file_field :employment_verification_docs %>
+		 </span>
+		 <p><%= f.submit %></p>
+		 <% end %>
+		</div>
+  	 </div>
 
-</div>
+	</div>
 </body>
