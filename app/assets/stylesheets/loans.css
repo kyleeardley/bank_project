@@ -29,7 +29,7 @@
     }
     
 	.newloanpad{
-	/*background: #efefef;*/
+		background: #efefef;
 		padding-left:20px;
 		padding-right:35px;
 		padding-bottom:50px;
@@ -39,12 +39,16 @@
 		text-align: center;
 	}
 	
+	.center{
+		margin-right:135px;
+	}
+	
 	.newloancontain{
 		box-shadow: 10px 10px 5px #888888;
 		box-sizing: border-box;
 		width: auto;
 		max-width: 480px;
-		/*background-color: #efefef;*/ 
+		background-color: #efefef; 
 		border: 2px solid #333; 
 		border-radius: 5px; 
 		display:inline-block;
@@ -75,6 +79,3 @@
 	margin-top: 8px;
 	border-radius: 4px;
 	}
-
-
-
