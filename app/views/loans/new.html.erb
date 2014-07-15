@@ -20,11 +20,7 @@
   </span>
   <span class='newloanspan'>
     <%= f.label :origination_date, 'Date of Loan Origination' %>
-    <%= f.text_field :origination_date %>
-  </span>
-  <span class='newloanspan'>
-    <%= f.label :closed_date, 'Date of Loan Payoff' %>
-    <%= f.text_field :closed_date %>
+    <%= f.text_field :origination_date, :id => 'datepicker', :value =>'' %>
   </span>
   <span class='newloanspan'>
     <%= f.label :loan_amount, 'Amount of Loan' %>
@@ -35,16 +31,16 @@
     <%= f.text_field :loan_interest_rate %>
   </span>
   <span class='newloanspan'>
-    <%= f.label :loan_term, 'Length of Loan in Months' %>
+    <%= f.label :loan_term, 'Length of Loan in Years' %>
     <%= f.text_field :loan_term %>
   </span>
   <span class='newloanspan'>
     <%= f.label :loan_type, 'Select Loan Type' %>
-    <%= f.text_field :loan_type %>
+    <%= f.select :loan_type, options_for_select(['','Construction Loan', 'Mortgage Loan', 'Auto Loan', 'Personal Property Loan', 'Other']) %>
   </span>
   <span class='newloanspan'>
     <%= f.label :loan_status, 'Select Loan Status' %>
-    <%= f.text_field :loan_status %>
+    <%= f.select :loan_type, options_for_select(['','In Underwriting', 'Active', 'Closed']) %>
   </span>
   <span class='newloanspan'>
     <%= f.label :application_docs, 'Loan Application Documents'%>
@@ -63,6 +59,10 @@
   <span class='newloanspan'>
     <%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
     <%= f.file_field :employment_verification_docs %>
+  </span>
+  <span class='newloanspan'>
+    <%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
+    <%= f.file_field :title_insurance_docs %>
   </span>
 
   

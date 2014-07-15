@@ -6,7 +6,7 @@ class CreateLoans < ActiveRecord::Migration
       t.datetime :origination_date
       t.datetime :closed_date
       t.string :loan_status
-      t.float :loan_amount
+      t.decimal :loan_amount, precision: 12, scale: 2
       t.float :loan_interest_rate
       t.string :loan_term
       t.string :financials_docs

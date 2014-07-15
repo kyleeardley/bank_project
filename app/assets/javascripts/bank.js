@@ -22,9 +22,13 @@ $(document).ready(function() {
   	 });
 	});
 
-	$('#openexistingloan').click(function() {
+	$('.openexistingloan').click(function() {
 		console.log('Clicked');
+
+
 		
 	});
+
+	
 
 });
