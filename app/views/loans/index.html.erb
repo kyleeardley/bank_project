@@ -5,20 +5,26 @@
         <h2 id = 'maindisplaytitle'>Current Loans Index</h2>
       </div>
       <div class = 'currentloansmaindisplay'>
-      	<ul class="loans">
       		<%= @current_user.username%>
-  			<% @loans.each do |loan| %>
-    		<li>
-
-     			<%= loan.loan_type%>
-      			<%= link_to @current_user.username, user %>
-    		</li>
-  			<% end %>
-</ul>
-      
-        
+          <table>
+  			    <% @loans.each do |loan| %>
+    		    <tr class = "<%= cycle('listlineodd', 'listlineeven')%>">
+              <td class = 'loandata'>
+     			      <dt><%= loan.loan_type%></dt>
+                <dt><%= loan.loan_amount%></dt>
+      			     <%= link_to @current_user.username, users_path %>
+              </td>
+              <td class = 'listactions'>
+                <%=link_to 'Show', loan%>
+                <%=link_to 'Edit', edit_loan_path(loan)%>
+                <%=link_to 'Delete', loan_path(loan), :method => :delete, data: {confirm: 'Are You Sure?'}%>
+              </td>
+            </tr>
+            <% end %>
+          </table> 
     </div>
       
     </center>  
 </div>
 <body>
+

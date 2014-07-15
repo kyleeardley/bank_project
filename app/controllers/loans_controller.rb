@@ -18,11 +18,16 @@ def create
 	end
 end
 
+def destroy
+
+end
+
+
 
 private
 
 	def loan_params
-		params.require(:loan).permit(:loan_type, :docs, :financials_docs)
+		params.require(:loan).permit(:all)
 	end
 
 end

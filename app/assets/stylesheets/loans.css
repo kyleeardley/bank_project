@@ -6,7 +6,7 @@
 
 	#maindisplaytitle {
 	color:#fff;
-	margin-top: 35%;
+	margin-top: 250px;
 	opacity:1;
 	}
 
@@ -305,6 +305,7 @@ and (min-device-width : 768px) {
 		padding: 0px;
 		margin-top:20px;
 		text-align: left;
+		
 	}
 	
 	.newloancontain{
@@ -318,11 +319,13 @@ and (min-device-width : 768px) {
 		text-align: left;
 		margin-top: 118px;
 		width: 600px;
+		
 
 	}
 
-	.newloanp {
-		width: 40%;
+
+	.newloaninputs {
+		width: 35%;
 	}
 
 	.newloanheader {
@@ -351,6 +354,7 @@ and (min-device-width : 768px) {
 		padding-right:35px;
 		padding-bottom:50px;
 		padding-top:10px;
+
 	}
 	
 	.text {
@@ -417,6 +421,10 @@ and (min-device-width : 768px) {
 		font-family: verdana,arial;
 		color: #D41313; 
 		font-size: 1.00em;
+	}
+
+	.loanindexli {
+
 	}
 	
 
