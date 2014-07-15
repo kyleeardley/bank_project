@@ -68,8 +68,8 @@
 	.currentloansmaindisplay{
 	width: 90%;
 	height: 618px;
-	background-color: white;
-	opacity: .95;
+	background-color: #000;
+	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
 	}
