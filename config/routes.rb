@@ -3,6 +3,7 @@ BankApp::Application.routes.draw do
   root 'sessions#new'
   resources :sessions, only: [:new, :create, :delete]
   resources :users
+  resources :loans
   match '/terminal', to: 'bank#bank_central', via: 'get'
   match '/signup', to: 'users#new', via:'get'
   match '/clienthome', to: 'bank#clienthome', via: 'get'

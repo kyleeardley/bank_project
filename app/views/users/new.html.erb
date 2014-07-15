@@ -5,6 +5,8 @@
 	<span class="head">Register Here</span>
   </div>
   <div class="pad">
+
+    <%=render 'error_messages'%>
     <%= form_for(@user) do |f| %>
 
       <%= f.label :username %>
@@ -22,11 +24,7 @@
       <%= f.label :admin2, "Make Admin" %>
       <%= f.check_box :admin2 %>
 
-      <% if @user.errors.full_messages.any? %>
-      <% @user.errors.full_messages.each do |error_message| %>
-      <%= @user.errors.full_messages.first if @user.errors.any? %>
-      <%end%>
-      <%end%>
+      
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
     <% end %>

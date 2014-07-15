@@ -1,0 +1,24 @@
+<body id = 'terminalbody'>
+<div>
+    <center>
+      <div id = 'displaytitlebox'>
+        <h2 id = 'maindisplaytitle'>Current Loans Index</h2>
+      </div>
+      <div class = 'currentloansmaindisplay'>
+      	<ul class="loans">
+      		<%= @current_user.username%>
+  			<% @loans.each do |loan| %>
+    		<li>
+
+     			<%= loan.loan_type%>
+      			<%= link_to @current_user.username, user %>
+    		</li>
+  			<% end %>
+</ul>
+      
+        
+    </div>
+      
+    </center>  
+</div>
+<body>

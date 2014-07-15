@@ -6,7 +6,7 @@
 
 	#maindisplaytitle {
 	color:#fff;
-	margin-top: 25%;
+	margin-top: 35%;
 	opacity:1;
 	}
 
@@ -36,105 +36,16 @@
 	border-radius: 10px;
 	}
 
-	.maindisplay{
+	.currentloansmaindisplay{
 	width: 90%;
 	height: 618px;
-	background-color: #000;
-	opacity: .9;
+	background-color: white;
+	opacity: .95;
 	margin-top: 8px;
 	border-radius: 4px;
 	}
 
-	#openexistingloan {
-	width: 200px;
-	height: 200px;
-	background-color: clear;
-	display: block;
-	position: relative;
-	left: -250px;
-	top: 20px;
-	color:white;
-	}
 	
-		#openexistingloan img {
-		width: 200px;
-		height: 200px;
-		margin-bottom: -20px;
-		}
-	
-
-	#loanrules {
-	width: 200px;
-	height: 200px;
-	background-color: clear;
-	display: block;
-	position: relative;
-	left: 250px;
-	top: -188px;
-	color: white;
-	}
-
-		#loanrules img {
-		width:200px;
-		height:200px;
-		margin-bottom: -10px;
-		padding-top: 0px;
-		}
-
-
-	#clientlist {
-	width: 200px;
-	height: 200px;
-	background-color: clear;
-	display: block;
-	position: relative;
-	top: -380px;
-	color: white;
-	}
-
-		#clientlist img {
-		width:200px;
-		height:200px;
-		margin-bottom: 0px;
-		padding-top: 0px;
-		} 
-		
-	#graphs {
-	width: 200px;
-	height: 200px;
-	background-color: clear;
-	display: block;
-	position: relative;
-	left: -250px;
-	top: -405px;
-	color:white;
-	}
-
-		#graphs img {
-		width:200px;
-		height:200px;
-		margin-bottom: -20px;
-		padding-top: 0px;
-		} 
-
-
-	#createloan {
-	width: 200px;
-	height: 200px;
-	background-color: clear;
-	display: block;
-	position: relative;
-	left: 250px;
-	top: -15px;
-	color:white;
-	}
-
-		#createloan img {
-		width:200px;
-		height:200px;
-		margin-bottom: -10px;
-		padding-top: 0px;
-		}
 		
 @media only screen 
 and (min-device-width : 768px) {
@@ -341,4 +252,171 @@ and (min-device-width : 768px) {
 		padding-top: 0px;
 		}
 }
+
+
+#newloanbody{
+	background: url(chrome.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+	}
+	.font{
+		margin-top: 155px;
+	}
+	
+	.newloanouter-container{
+		text-align: center;
+	}
+	
+	h1{
+		text-align: center;
+	    text-shadow: 0 1px 0 #ccc,
+				     0 2px 0 #c9c9c9,
+				     0 3px 0 #bbb,
+				     0 4px 0 #b9b9b9,
+				     0 5px 0 #aaa,
+				     0 6px 1px rgba(0,0,0,.1),
+				     0 0 5px rgba(0,0,0,.1),
+				     0 1px 3px rgba(0,0,0,.3),
+				     0 3px 5px rgba(0,0,0,.2),
+				     0 5px 10px rgba(0,0,0,.25),
+				     0 10px 10px rgba(0,0,0,.2),
+				     0 20px 20px rgba(0,0,0,.15);
+		font-size: 80px;
+		font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+		letter-spacing: -4px;
+		-webkit-text-stroke: 1px white;
+		text-transform: uppercase;
+	}
+	
+
+	
+	.newloancontainer {
+		box-shadow: 10px 10px 5px #888888;
+		box-sizing: border-box;
+		width: auto;
+		max-width: 480px;
+		background-color: #FFFFFF; 
+		border: 2px solid #333; 
+		border-radius: 5px; 
+		display:inline-block;
+		padding: 0px;
+		margin-top:20px;
+		text-align: left;
+	}
+	
+	.newloancontain{
+		box-shadow: 10px 10px 5px #888888;
+		box-sizing: border-box;
+		background-color: #FFFFFF; 
+		border: 2px solid #333; 
+		border-radius: 5px; 
+		display:inline-block;
+		padding: 0px;
+		text-align: left;
+		margin-top: 118px;
+		width: 600px;
+
+	}
+
+	.newloanp {
+		width: 40%;
+	}
+
+	.newloanheader {
+		background: #428bca;
+		padding: 15px;
+		text-align: center;
+	}
+	
+	.newloanhead{
+		font-family: verdana,arial;
+		color: #000; 
+		font-size: 1.00em; 
+		font-weight:bold;
+	}
+	
+	.padding {
+		background: #efefef;
+		padding-right: 35px;
+		padding-left: 20px;
+		padding-top:10px;
+		padding-bottom: 15px;
+	}
+	.newloanpad{
+		background: #efefef;
+		padding-left:20px;
+		padding-right:35px;
+		padding-bottom:50px;
+		padding-top:10px;
+	}
+	
+	.text {
+		font-family: verdana,arial;
+		color: #000; 
+		font-size: 1.00em; 
+		font-weight:bold;
+	}
+	
+	td { 
+	 	text-align:left;
+	 	font-family: verdana,arial;
+	 	color: #000; 
+	 	font-size: 1.00em; 
+	}
+	
+	td, th {
+		padding-bottom: 5px;
+	}
+	 
+	#newloaninput { 
+		border: 1px solid #CCCCCC; 
+		border-radius: 5px; 
+		color: #000;
+		display: inline-block; 
+		font-size: 1.00em;  
+		padding: 5px; 
+		width: 40%; 
+	}
+	
+	.submit{
+		color: #000;
+	}
+	
+	input[type="button"], input[type="reset"], input[type="submit"] { 
+		height: auto; 
+		width: auto; 
+		cursor: pointer; 
+		box-shadow: 0px 0px 5px #0361A8; 
+		float: right; 
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+	
+	input:hover{
+		opacity: .4;
+		color: #000;
+	}
+	.btn-large {
+		padding: 11px 19px;
+	}
+	a:hover{
+		color:#333;
+		opacity: .4;
+		text-decoration: none;
+	}
+	
+	table.center { 
+		margin-left:auto; 
+		margin-right:auto; 
+	}
+	
+	.error { 
+		font-family: verdana,arial;
+		color: #D41313; 
+		font-size: 1.00em;
+	}
+	
 

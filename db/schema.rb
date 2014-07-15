@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140709204024) do
+ActiveRecord::Schema.define(version: 20140714230947) do
+
+  create_table "loans", force: true do |t|
+    t.integer  "user_id"
+    t.string   "loan_type"
+    t.datetime "origination_date"
+    t.datetime "closed_date"
+    t.string   "loan_status"
+    t.float    "loan_amount"
+    t.float    "loan_interest_rate"
+    t.string   "loan_term"
+    t.string   "financials_docs"
+    t.string   "purchase_contract_docs"
+    t.string   "Application_docs"
+    t.string   "title_insurance_docs"
+    t.string   "employment_verification_docs"
+    t.text     "description"
+    t.string   "mortgage_agreement_docs"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "docs"
+  end
+
+  add_index "loans", ["user_id"], name: "index_loans_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "username"

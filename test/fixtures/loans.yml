@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 
+  loan_type: MyString
+  origination_date: 2014-07-14 12:09:18
+  closed_date: 2014-07-14 12:09:18
+  loan_status: MyString
+  loan_amount: 1.5
+  loan_interest_rate: 1.5
+  loan_term: MyString
+  financials_docs: MyString
+  purchase_contract_docs: MyString
+  Application_docs: MyString
+  title_insurance_docs: MyString
+  employment_verification_docs: MyString
+  description: MyText
+  mortgage_agreement_docs: MyString
+
+two:
+  user_id: 
+  loan_type: MyString
+  origination_date: 2014-07-14 12:09:18
+  closed_date: 2014-07-14 12:09:18
+  loan_status: MyString
+  loan_amount: 1.5
+  loan_interest_rate: 1.5
+  loan_term: MyString
+  financials_docs: MyString
+  purchase_contract_docs: MyString
+  Application_docs: MyString
+  title_insurance_docs: MyString
+  employment_verification_docs: MyString
+  description: MyText
+  mortgage_agreement_docs: MyString

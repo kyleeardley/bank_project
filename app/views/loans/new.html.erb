@@ -1,0 +1,67 @@
+<body id='newloanbody'>
+<div class="newloanouter-container">
+  <div class="newloancontain">
+  <div class="newloanheader">
+  <span class="newloanhead">New Loan File</span>
+  </div>
+  <div class="newloanpad">
+
+<%= render 'error_messages'%>
+<%= form_for @loan, :html => {:multipart => true} do |f| %>
+  
+  <%= f.hidden_field :user_id %>
+  <p class='newloanp'>
+    <%= f.label :origination_date, 'Date of Loan Origination' %>
+    <%= f.text_field :origination_date %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :closed_date, 'Date of Loan Payoff' %>
+    <%= f.text_field :closed_date %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :loan_amount, 'Amount of Loan' %>
+    <%= f.text_field :loan_amount %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :loan_interest_rate, 'Input Loan Interest Rate' %>
+    <%= f.text_field :loan_interest_rate %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :loan_term, 'Length of Loan in Months' %>
+    <%= f.text_field :loan_term %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :loan_type, 'Select Loan Type' %>
+    <%= f.text_field :loan_type %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :loan_status, 'Select Loan Status' %>
+    <%= f.text_field :loan_status %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :application_docs, 'Loan Application Documents'%>
+    <%= f.file_field :application_docs %>
+  </p>
+  <p class='newloanp'>
+    <%= f.label :financials_docs, 'Client Financial Documents'%>
+    <%= f.file_field :financials_docs %>
+  </p>
+
+  <p class='newloanp'>
+    <%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
+    <%= f.file_field :mortgage_agreement_docs %>
+  </p>
+
+  <p class='newloanp'>
+    <%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
+    <%= f.file_field :employment_verification_docs %>
+  </p>
+
+  
+  <p><%= f.submit %></p>
+<% end %>
+</div>
+  </div>
+
+</div>
+</body>
