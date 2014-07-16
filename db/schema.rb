@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140715055548) do
+ActiveRecord::Schema.define(version: 20140715225320) do
 
   create_table "loans", force: true do |t|
     t.integer  "user_id"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140715055548) do
     t.string   "docs"
     t.string   "name_of_borrower"
     t.string   "name_of_banker"
+    t.decimal  "loan_principle",               precision: 12, scale: 2
   end
 
   add_index "loans", ["user_id"], name: "index_loans_on_user_id"

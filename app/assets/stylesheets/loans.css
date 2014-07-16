@@ -1,5 +1,11 @@
 @import 'bootstrap';
 
+<<<<<<< HEAD
+
+	#terminalbody{}
+
+=======
+>>>>>>> 0c3de409ade87ea6616aac6956c0265515f7c903
 	#newloanbody{
 	background-image: url("chrome.jpg");
 	margin-bottom:30px;
@@ -78,4 +84,41 @@
 	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
+<<<<<<< HEAD
 	}
+
+
+	/*  index  */
+
+.listlineeven {
+	background: #b0b0ff;
+
+}
+
+.listlineodd {
+	background: #73a0ff;
+}
+
+.currentloansindexmaindisplay{
+	width: 90%;
+	height: 618px;
+	background-color: white;
+	opacity: .93;
+	margin-top: 8px;
+	border-radius: 4px;
+	}
+
+td.loandata {
+	width: 45%;
+}
+
+.listactions {
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+=======
+	}
+>>>>>>> 0c3de409ade87ea6616aac6956c0265515f7c903

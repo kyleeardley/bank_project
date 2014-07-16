@@ -1,4 +1,4 @@
 <%@current_user.loans.each do |loan|%>
 <%=loan.loan_type%>
-<%=loan.application_docs.url.to_s%>
+<%=image_tag loan.Application_docs.url().to_s%>
 <%end%>
