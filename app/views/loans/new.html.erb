@@ -1,8 +1,9 @@
 <body id='newloanbody'>
 	<div class="newloanouter-container">
+
   <div class="newloancontain">
   <div class="newloanheader">
-	<span class="text">Loan Application</span>
+	<span class="text">Build Loan File</span>
   </div>
   <div class="newloanpad">
 			<%= render 'error_messages'%>
@@ -53,23 +54,30 @@
     <%= f.label :financials_docs, 'Client Financial Documents'%>
     <%= f.file_field :financials_docs %>
   </span>
+		
+		  
 
-  <span class='newloanspan'>
-    <%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
-    <%= f.file_field :mortgage_agreement_docs %>
-  </span>
 
-  <span class='newloanspan'>
-    <%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
-    <%= f.file_field :employment_verification_docs %>
-  </span>
-  <span class='newloanspan'>
-    <%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
-    <%= f.file_field :title_insurance_docs %>
-  </span>
-			
-		 <p><%= f.submit %></p>
-		 <% end %>
+
+			  <span class='newloanspan'>
+				<%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
+				<%= f.file_field :mortgage_agreement_docs %>
+			  </span>
+
+			  <span class='newloanspan'>
+				<%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
+				<%= f.file_field :employment_verification_docs %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
+				<%= f.file_field :title_insurance_docs %>
+			  </span>
+			  <div class='center'>
+		 	  <p><%= f.submit 'Create Loan', class: "btn btn-large btn-primary" %></p>
+		 	  </div>
+		  <% end %>
+		 
+
 		</div>
   	 </div>
 

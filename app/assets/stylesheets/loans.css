@@ -1,7 +1,9 @@
 @import 'bootstrap';
 
 
+
 	#terminalbody{}
+
 
 	#newloanbody{
 	background-image: url("chrome.jpg");
@@ -32,7 +34,7 @@
     }
     
 	.newloanpad{
-	background: #efefef;
+		background: #efefef;
 		padding-left:20px;
 		padding-right:35px;
 		padding-bottom:50px;
@@ -42,19 +44,24 @@
 		text-align: center;
 	}
 	
+	.center{
+		margin-right:135px;
+	}
+	
 	.newloancontain{
 		box-shadow: 10px 10px 5px #888888;
 		box-sizing: border-box;
 		width: auto;
 		max-width: 480px;
-		background-color: #FFFFFF; 
+		background-color: #efefef; 
 		border: 2px solid #333; 
 		border-radius: 5px; 
 		display:inline-block;
-		padding: 0px;
+		padding-bottom: 20px;
 		margin-top:20px;
 		text-align: left;
 	}
+	
 	.newloanheader{
 		background: #428bca;
 		padding: 15px;
@@ -79,7 +86,7 @@
 	}
 
 
-	/*  index  */
+	/*  index page*/
 
 .listlineeven {
 	background: #b0b0ff;
@@ -92,7 +99,7 @@
 
 .currentloansindexmaindisplay{
 	width: 90%;
-	height: 618px;
+	height: auto;
 	background-color: white;
 	opacity: .93;
 	margin-top: 8px;
@@ -101,12 +108,25 @@
 
 td.loandata {
 	width: 45%;
+
 }
 
-.listactions {
+td.loandata2 {
+	padding-top: 35px;
+}
+
+#borrowername {
+	margin-bottom: -3px;
+	margin-top: -3px;
+	text-decoration: underline;
+}
+
+#listactions a{
 	color: white;
+
 	text-align: right;
 	padding-right: 10px;
 }
+
 
 
