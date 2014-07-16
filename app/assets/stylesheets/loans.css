@@ -85,12 +85,12 @@
 	/*  index  */
 
 .listlineeven {
-	background: #b0b0ff;
+	background: #428bca;
 
 }
 
 .listlineodd {
-	background: #73a0ff;
+	background: #efefef;
 }
 
 .currentloansindexmaindisplay{
@@ -102,17 +102,26 @@
 	border-radius: 4px;
 	}
 
-td.loandata {
-	width: 45%;
+.loandata {
+	width: auto;
 }
 
-.listactions {
-	color: white;
-	text-align: right;
-	padding-right: 10px;
+.list {
+	text-align:right;
 }
 
+.list a{
+	color: #000;
+}
+.list a:hover{
+	color: #333;
+	opacity: .6;
+}
 
-
-	}
-
+.table th, .table td {
+padding: 8px;
+line-height: 20px;
+text-align: left;
+vertical-align: bottom;
+border-top: 1px solid #dddddd;
+}

@@ -39,7 +39,11 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'carrierwave'
 gem 'bootstrap-datepicker-rails'
+<<<<<<< HEAD
 gem 'mini_magick'
+=======
+gem 'rmagick'
+>>>>>>> 241ec09b421340669b07d764108a1e1b27cf1c22
 
 
 # Use unicorn as the app server
