@@ -1,5 +1,6 @@
 <body id='newloanbody'>
 	<div class="newloanouter-container">
+<<<<<<< HEAD
   <div class="newloancontain">
   <div class="newloanheader">
 	<span class="text">Loan Application</span>
@@ -53,12 +54,61 @@
     <%= f.label :financials_docs, 'Client Financial Documents'%>
     <%= f.file_field :financials_docs %>
   </span>
+=======
+		
+		  <div class="newloancontain">
+		  
+		  <div class="newloanheader">
+				<span class="text">Loan Application</span>
+			  </div>
+			  <div class="newloanpad">
+				<%= render 'error_messages'%>
+				<%= form_for @loan, :html => {:multipart => true} do |f| %>
+>>>>>>> 0c3de409ade87ea6616aac6956c0265515f7c903
 
-  <span class='newloanspan'>
-    <%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
-    <%= f.file_field :mortgage_agreement_docs %>
-  </span>
+				<%= f.hidden_field :user_id %>
+			  <span class='newloanspan'>
+				<%= f.label :name_of_borrower, 'Name of Borrower' %>
+				<%= f.text_field :name_of_borrower %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :name_of_banker, 'Name of Banker' %>
+				<%= f.text_field :name_of_banker %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :origination_date, 'Date of Loan Origination' %>
+				<%= f.text_field :origination_date, :id => 'datepicker', :value =>'' %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :loan_amount, 'Amount of Loan' %>
+				<%= f.text_field :loan_amount %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :loan_interest_rate, 'Input Loan Interest Rate' %>
+				<%= f.text_field :loan_interest_rate %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :loan_term, 'Length of Loan in Years' %>
+				<%= f.text_field :loan_term %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :loan_type, 'Select Loan Type' %>
+				<%= f.select :loan_type, options_for_select(['','Construction Loan', 'Mortgage Loan', 'Auto Loan', 'Personal Property Loan', 'Other']) %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :loan_status, 'Select Loan Status' %>
+				<%= f.select :loan_type, options_for_select(['','In Underwriting', 'Active', 'Closed']) %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :application_docs, 'Loan Application Documents'%>
+				<%= f.file_field :application_docs %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :financials_docs, 'Client Financial Documents'%>
+				<%= f.file_field :financials_docs %>
+			  </span>
 
+<<<<<<< HEAD
   <span class='newloanspan'>
     <%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
     <%= f.file_field :employment_verification_docs %>
@@ -70,6 +120,26 @@
 			
 		 <p><%= f.submit %></p>
 		 <% end %>
+=======
+			  <span class='newloanspan'>
+				<%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
+				<%= f.file_field :mortgage_agreement_docs %>
+			  </span>
+
+			  <span class='newloanspan'>
+				<%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
+				<%= f.file_field :employment_verification_docs %>
+			  </span>
+			  <span class='newloanspan'>
+				<%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
+				<%= f.file_field :title_insurance_docs %>
+			  </span>
+			  <div class='center'>
+		 	  <p><%= f.submit 'Create Loan', class: "btn btn-large btn-primary" %></p>
+		 	  </div>
+		  <% end %>
+		 
+>>>>>>> 0c3de409ade87ea6616aac6956c0265515f7c903
 		</div>
   	 </div>
 
