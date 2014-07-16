@@ -25,6 +25,8 @@
 	.bw:hover {
     cursor: pointer;
     -webkit-filter: grayscale(100%);
+    font-size:17px;
+    line-height:30px;
     }
 
 
@@ -46,13 +48,13 @@
 	}
 
 	#loan1 {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	background-color: clear;
 	display: block;
 	position: relative;
-	left: -250px;
-	top: 20px;
+	left: -255px;
+	top: 90px;
 	color:white;
 	}
 	
@@ -71,7 +73,7 @@
 	display: block;
 	position: relative;
 	left: 250px;
-	top: -80px;
+	top: -60px;
 	color: white;
 	}
 
@@ -89,7 +91,7 @@
 	background-color: clear;
 	display: block;
 	position: relative;
-	top: -240px;
+	top: -210px;
 	color: white;
 	}
 
@@ -107,7 +109,7 @@
 	display: block;
 	position: relative;
 	left: 0px;
-	top: -85px;
+	top: -140px;
 	color:white;
 	}
 
@@ -126,7 +128,7 @@
 	display: block;
 	position: relative;
 	left: 250px;
-	top: -235px;
+	top: -295px;
 	color:white;
 	}
 
@@ -144,7 +146,7 @@
 	display: block;
 	position: relative;
 	left: -250px;
-	top: -385px;
+	top: -440px;
 	color:white;
 	}
 

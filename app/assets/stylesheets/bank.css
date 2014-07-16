@@ -25,6 +25,8 @@
 	.bw:hover {
     cursor: pointer;
     -webkit-filter: grayscale(100%);
+    font-size:18px;
+    line-height:30px;
     }
 
 
