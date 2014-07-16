@@ -4,15 +4,16 @@
       <div id = 'displaytitlebox'>
         <h2 id = 'maindisplaytitle'>CURRENT LOANS INDEX</h2>
       </div>
-      <div class = 'currentloansmaindisplay'>
-      		<%= @current_user.username%>
+      <div class = 'currentloansindexmaindisplay'>
+      		
           <table>
   			    <% @loans.each do |loan| %>
     		    <tr class = "<%= cycle('listlineodd', 'listlineeven')%>">
               <td class = 'loandata'>
-     			      <dt><%= loan.loan_type%></dt>
-                <dt><%= loan.loan_amount%></dt>
-      			     <%= link_to @current_user.username, users_path %>
+                <dt>Borrower Name&nbsp&nbsp<%= loan.name_of_borrower%></dt>
+     			      <dt>Loan Type&nbsp&nbsp<%= loan.loan_type%></dt>
+                <dt>Interest Rate&nbsp&nbsp<%= loan.loan_interest_rate%>%</dt>
+      			     
               </td>
               <td class = 'listactions'>
                 <%=link_to 'Show', loan%>
