@@ -1,12 +1,13 @@
 @import "bootstrap";
+
 body{
 	background: url(bankvault.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-
-	}
+  	margin-bottom: 200px;
+}
 	.font{
 		margin-top: 155px;
 	}
@@ -55,6 +56,8 @@ body{
 	.contain{
 		box-shadow: 10px 10px 5px #888888;
 		box-sizing: border-box;
+		width: auto;
+		max-width: 480px;
 		background-color: #FFFFFF; 
 		border: 2px solid #333; 
 		border-radius: 5px; 
@@ -62,6 +65,21 @@ body{
 		padding: 0px;
 		text-align: left;
 		margin-top: 118px;
+	}
+	
+	
+	.contain1{
+		box-shadow: 10px 10px 5px #888888;
+		box-sizing: border-box;
+		width: auto;
+		max-width: 480px;
+		background-color: #FFFFFF; 
+		border: 2px solid #333; 
+		border-radius: 5px; 
+		display:inline-block;
+		padding: 0px;
+		text-align: left;
+		margin-top: 200px;
 	}
 
 	.header {
@@ -140,9 +158,11 @@ body{
 		opacity: .4;
 		color: #000;
 	}
+	
 	.btn-large {
 		padding: 11px 19px;
 	}
+	
 	a:hover{
 		color:#333;
 		opacity: .4;
@@ -166,11 +186,13 @@ body{
 	font-size:64px;
 	}
 }
+
 @media only screen and (max-width:720px){
 	.font{		
 	font-size:58px;
 	}
 }
+
 @media only screen and (max-width:480px){
 	.font{		
 	font-size:48px;

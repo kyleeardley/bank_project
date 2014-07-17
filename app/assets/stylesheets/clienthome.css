@@ -2,6 +2,7 @@
 	#terminalbody{
 	background-image: url("chrome.jpg");
 	margin-top:-150px;
+	margin-bottom:20px;
 	}
 
 	#maindisplaytitle {
@@ -25,8 +26,6 @@
 	.bw:hover {
     cursor: pointer;
     -webkit-filter: grayscale(100%);
-    font-size:17px;
-    line-height:30px;
     }
 
 

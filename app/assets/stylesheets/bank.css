@@ -2,6 +2,7 @@
 	#terminalbody{
 	background-image: url("chrome.jpg");
 	margin-top:-11.5%;
+	margin-bottom: 20px;
 	}
 
 	#maindisplaytitle {
@@ -25,8 +26,6 @@
 	.bw:hover {
     cursor: pointer;
     -webkit-filter: grayscale(100%);
-    font-size:18px;
-    line-height:30px;
     }
 
 
@@ -314,7 +313,7 @@ and (min-device-width : 768px) {
 	background-color: clear;
 	display: block;
 	position: relative;
-	top: -80px;
+	top: -100px;
 	color: white;
 	}
 
@@ -332,7 +331,7 @@ and (min-device-width : 768px) {
 	display: block;
 	position: relative;
 	left: -80px;
-	top: 10px;
+	top: -10px;
 	color:white;
 	}
 
@@ -351,7 +350,7 @@ and (min-device-width : 768px) {
 	display: block;
 	position: relative;
 	left: 100px;
-	top: 200px;
+	top: 180px;
 	color:white;
 	}
 

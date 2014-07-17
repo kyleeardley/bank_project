@@ -1,5 +1,6 @@
 @import 'bootstrap';
 
+<<<<<<< HEAD
 
 
 
@@ -11,6 +12,8 @@
 	#terminalbody{}
 
 
+=======
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 	#newloanbody{
 	background-image: url("chrome.jpg");
 	margin-bottom:30px;
@@ -89,7 +92,11 @@
 	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 	}
 
 
@@ -101,6 +108,7 @@
 }
 
 .listlineodd {
+<<<<<<< HEAD
 	background: #87CEFA;
 }
 
@@ -109,6 +117,16 @@
 	height: auto;
 	background-color: clear;
 	opacity: .93;
+=======
+	background: #efefef;
+}
+
+.currentloansindexmaindisplay{
+	width: 90%;
+	height: 618px;
+	background-color: #000;
+	opacity: .9;
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 	margin-top: 8px;
 	border-radius: 4px;
 	
@@ -116,6 +134,7 @@
 
 	}
 
+<<<<<<< HEAD
 td.loandata {
 	width: 45%;
 
@@ -141,9 +160,25 @@ td.loandata2 {
 
 	text-align: right;
 	padding-right: 10px;
+=======
+.loandata {
+	width: auto;
 }
 
+.list {
+	text-align:right;
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
+}
 
+.list a{
+	color: #000;
+}
+.list a:hover{
+	color: #333;
+	opacity: .6;
+}
+
+<<<<<<< HEAD
 /*  show page*/
 #box1 {
 	width:40px;
@@ -176,3 +211,12 @@ border-radius: 10px;
 
 }
 	}
+=======
+.table th, .table td {
+padding: 8px;
+line-height: 20px;
+text-align: left;
+vertical-align: bottom;
+border-top: 1px solid #dddddd;
+}
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
