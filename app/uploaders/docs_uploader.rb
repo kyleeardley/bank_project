@@ -3,13 +3,9 @@
 class DocsUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
-<<<<<<< HEAD
-  include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
-=======
   # include CarrierWave::RMagick
     include CarrierWave::MiniMagick
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
+
 
   # Choose what kind of storage to use for this uploader:
   storage :file
