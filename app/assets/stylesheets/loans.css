@@ -1,5 +1,19 @@
 @import 'bootstrap';
 
+<<<<<<< HEAD
+
+
+
+	#terminalbody{}
+
+
+
+
+	#terminalbody{}
+
+
+=======
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 	#newloanbody{
 	background-image: url("chrome.jpg");
 	margin-bottom:30px;
@@ -78,11 +92,15 @@
 	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
+<<<<<<< HEAD
+
+=======
 	
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 	}
 
 
-	/*  index  */
+	/*  index page*/
 
 .listlineeven {
 	background: #428bca;
@@ -90,6 +108,16 @@
 }
 
 .listlineodd {
+<<<<<<< HEAD
+	background: #87CEFA;
+}
+
+.currentloansindexmaindisplay{
+	width: 618px:;
+	height: auto;
+	background-color: clear;
+	opacity: .93;
+=======
 	background: #efefef;
 }
 
@@ -98,16 +126,48 @@
 	height: 618px;
 	background-color: #000;
 	opacity: .9;
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 	margin-top: 8px;
 	border-radius: 4px;
+	
+	
+
 	}
 
+<<<<<<< HEAD
+td.loandata {
+	width: 45%;
+
+}
+
+td.loandata2 {
+	padding-top: 35px;
+	
+}
+
+#borrowername {
+	margin-bottom: -3px;
+	margin-top: -3px;
+	text-decoration: underline;
+}
+
+#listactions {
+	padding-left: 15px;
+}
+
+#listactions a{
+	color: white;
+
+	text-align: right;
+	padding-right: 10px;
+=======
 .loandata {
 	width: auto;
 }
 
 .list {
 	text-align:right;
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
 }
 
 .list a{
@@ -118,6 +178,40 @@
 	opacity: .6;
 }
 
+<<<<<<< HEAD
+/*  show page*/
+#box1 {
+	width:40px;
+	height: 40px;
+}
+
+.showmaindisplay {
+	width: 618px;
+	min-height: 800px;
+	background-color: white;
+	opacity: 1;
+	margin-top: 8px;
+	border-radius: 4px;
+}
+
+#newloanbody{
+	background-image: url("chrome.jpg");
+	margin-bottom:30px;
+	}
+
+#showdisplaytitlebox {
+background: #000;
+width: 618px;
+height: 50px;
+opacity: .9;
+border-radius: 10px;
+
+#showloansummary {
+	width: 598px;
+
+}
+	}
+=======
 .table th, .table td {
 padding: 8px;
 line-height: 20px;
@@ -125,3 +219,4 @@ text-align: left;
 vertical-align: bottom;
 border-top: 1px solid #dddddd;
 }
+>>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58

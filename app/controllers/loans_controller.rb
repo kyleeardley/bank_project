@@ -1,9 +1,13 @@
 class LoansController < ApplicationController
 include CurrentUser
-before_action :set_current_user, only: [:index, :create, :show, :new]
+before_action :set_current_user
+respond_to :html, :json
+
 
 def index
+
 	@loans=Loan.all
+	respond_with @loans
 end
 
 
@@ -18,13 +22,21 @@ def create
 	end
 end
 
-def destroy
 
+
+def destroy
+	
+	Loan.find(params[:id]).destroy
+	
+	redirect_to loans_url
 end
 
 def show
-	#@loan= Loan.find(params[:id])	
+	@loan = Loan.find(params[:id])
+	respond_with @loan
 end
+
+
 
 
 
@@ -33,7 +45,7 @@ private
 
 	def loan_params
 		params.require(:loan).permit(:origination_date, :closed_date,
-		:loan_status, :loan_amount, :loan_interest_rate, :loan_term, 
+		:loan_status, :loan_principle, :name_of_borrower,:loan_interest_rate, :loan_term, 
 		:mortgage_agreement_docs, :employment_verification_docs, 
 		:purchase_contract_docs, :loan_type, :financials_docs, :Application_docs,
 		:title_insurance_docs)
