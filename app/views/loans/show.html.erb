@@ -1,4 +1,16 @@
-<%@current_user.loans.each do |loan|%>
-<%=loan.loan_type%>
-<%=image_tag loan.Application_docs.url().to_s%>
-<%end%>
+
+
+<body id = 'terminalbody'>
+	<center>
+      <div id = 'showdisplaytitlebox'>
+        <h2 id = 'maindisplaytitle'><%=@loan.name_of_borrower.upcase%>&nbsp&nbspLOAN FILE</h2>
+      </div>
+      <div class = 'showmaindisplay'>
+      	<div></div>
+      		<%=image_tag @loan.Application_docs_url, id: 'image'%>
+      		
+    </center>  
+</div>
+	
+	<%= tag("div", class: "doc-btn", data: { url: "some_image_url" }) %>
+</body>

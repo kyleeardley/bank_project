@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :loans
+  has_many :loans, dependent: :destroy
   before_save { self.email = email.downcase }
   before_create :create_remember_token
   validates :username,  presence: true

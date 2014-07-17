@@ -2,6 +2,12 @@
 
 
 
+
+	#terminalbody{}
+
+
+
+
 	#terminalbody{}
 
 
@@ -83,27 +89,31 @@
 	opacity: .9;
 	margin-top: 8px;
 	border-radius: 4px;
+
 	}
 
 
 	/*  index page*/
 
 .listlineeven {
-	background: #b0b0ff;
+	background: #428bca;
 
 }
 
 .listlineodd {
-	background: #73a0ff;
+	background: #87CEFA;
 }
 
 .currentloansindexmaindisplay{
-	width: 90%;
+	width: 618px:;
 	height: auto;
-	background-color: white;
+	background-color: clear;
 	opacity: .93;
 	margin-top: 8px;
 	border-radius: 4px;
+	
+	
+
 	}
 
 td.loandata {
@@ -113,12 +123,17 @@ td.loandata {
 
 td.loandata2 {
 	padding-top: 35px;
+	
 }
 
 #borrowername {
 	margin-bottom: -3px;
 	margin-top: -3px;
 	text-decoration: underline;
+}
+
+#listactions {
+	padding-left: 15px;
 }
 
 #listactions a{
@@ -129,4 +144,35 @@ td.loandata2 {
 }
 
 
+/*  show page*/
+#box1 {
+	width:40px;
+	height: 40px;
+}
 
+.showmaindisplay {
+	width: 618px;
+	min-height: 800px;
+	background-color: white;
+	opacity: 1;
+	margin-top: 8px;
+	border-radius: 4px;
+}
+
+#newloanbody{
+	background-image: url("chrome.jpg");
+	margin-bottom:30px;
+	}
+
+#showdisplaytitlebox {
+background: #000;
+width: 618px;
+height: 50px;
+opacity: .9;
+border-radius: 10px;
+
+#showloansummary {
+	width: 598px;
+
+}
+	}

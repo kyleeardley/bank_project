@@ -29,6 +29,11 @@ $(document).ready(function() {
 		
 	});
 
+	$('.doc-btn').click(function() {
+		var url = $(this).data("url");
+		$('#image').attr('src', url);
+	});
+
 	
 
 });

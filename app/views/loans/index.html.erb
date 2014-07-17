@@ -11,7 +11,7 @@
     		    
             <tr class = "<%= cycle('listlineodd', 'listlineeven')%>">
               <td class = 'loandata'>
-                <dl id = 'borrowername'><h4>Name of Borrower&nbsp&nbsp<%=loan.name_of_borrower%></h4></dl>
+                <dl id = 'borrowername'><h4>Name of Borrower:&nbsp&nbsp<%=loan.name_of_borrower%></h4></dl>
                 <dt>Loan ID Number:&nbsp&nbsp<%= loan.id%></dt>
      			      <dt>Loan Type:&nbsp&nbsp<%= loan.loan_type%></dt>
                 <dt>Loan Origination Date:&nbsp&nbsp<%=loan.origination_date.present? ? loan.origination_date.strftime("%m/%d/%Y") : loan.origination_date%></dt>
@@ -24,7 +24,7 @@
               <td id = 'listactions'>
                 <%=link_to 'Show', loan%>
                 <%=link_to 'Edit', edit_loan_path(loan)%>
-                <%=link_to 'Delete', loan_path(loan), :method => :delete, data: {confirm: 'Are You Sure?'}%>
+                <%=link_to 'Delete', loan_path(loan.id), :method => :delete, data: {confirm: 'Are You Sure?'}%>
               </td>
             </tr>
             <% end %>

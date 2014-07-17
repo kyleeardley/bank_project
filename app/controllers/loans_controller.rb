@@ -1,10 +1,13 @@
 class LoansController < ApplicationController
 include CurrentUser
-before_action :set_current_user, only: [:index, :create, :show, :new]
+before_action :set_current_user
+respond_to :html, :json
+
 
 def index
 
 	@loans=Loan.all
+	respond_with @loans
 end
 
 
@@ -19,13 +22,21 @@ def create
 	end
 end
 
-def destroy
 
+
+def destroy
+	
+	Loan.find(params[:id]).destroy
+	
+	redirect_to loans_url
 end
 
 def show
-	#@loan= Loan.find(params[:id])	
+	@loan = Loan.find(params[:id])
+	respond_with @loan
 end
+
+
 
 
 
