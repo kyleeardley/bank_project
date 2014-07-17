@@ -6,12 +6,18 @@ gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.5'
 end
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+ gem 'sass-rails', '3.2.4'
+ gem 'coffee-rails', '3.2.2'
+ 
+gem 'uglifier', '1.2.3'
 end
+ 
+gem 'jquery-rails', '2.0.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
